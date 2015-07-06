@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math
+END
+moveobj3.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/moveobj3.m
+END
+quatRot_bod2lab.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/quatRot_bod2lab.m
+END
+quatRot_lab2bod.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/quatRot_lab2bod.m
+END
+move3.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/move3.m
+END
+pt_dist3.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/pt_dist3.m
+END
+get_arc_3d.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/get_arc_3d.m
+END
+move.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/move.m
+END
+pt_dist.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/pt_dist.m
+END
+max_dist.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/max_dist.m
+END
+eulzyxRot_bod2lab.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/eulzyxRot_bod2lab.m
+END
+eulzyxRot_lab2bod.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/eulzyxRot_lab2bod.m
+END
+eulzyx2quat.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/eulzyx2quat.m
+END
+quat2eulzyx.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/quat2eulzyx.m
+END
+trans3D.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/trans3D.m
+END
+len.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/len.m
+END
+scale3D.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/scale3D.m
+END

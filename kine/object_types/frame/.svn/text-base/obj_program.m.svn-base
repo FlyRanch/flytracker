@@ -1,0 +1,117 @@
+% Function OBJ_PROGRAM(cur_obj)
+% 
+% CALLING FUNCTION: model_params, param_edit_callback, param_button_callback
+% ACTIONS: Draw model on the camera views with current parameter settings
+% PARENT PROGRAM: Kine_v3_0
+% LAST MODIFIED: September 25, 2007 by gwyneth
+
+function obj_program(cur_obj)
+
+% Load guidata matrices
+controller = findobj('Tag','controller');
+data = guidata(controller);
+
+dig_fig = findobj('Tag','dig_fig');
+dig_data = guidata(dig_fig);
+
+% Get object info from guidata
+frame = str2num(get(data.handles.frame_box,'String'));
+alpha = (pi/180) * data.kine.(cur_obj).data.params(1,frame);%Get stored parameter value       
+
+%DEBUG: would normally use above line to get model coords, but am changing
+%the model definition from what it was for this data originally; eventually
+%will need to go through and update the model field for all the data.
+
+% OPTION 1:
+model_3d = data.kine.(cur_obj).config.model_coords;
+
+% OPTION 2:
+% model = load('C:\MATLAB7\work\kine_v2_1\models\fly_frame_20061120_rotated_roll_CM');
+% model_3d = model.coords;
+%alpha = 2*pi - alpha;
+
+
+% RETURN if not all anchor points digitized
+undone = find(data.kine.(cur_obj).data.coords(:,:,frame) == 0);
+if isempty(undone) == 0
+    % Clear old drawn models
+    to_delete = findobj('Tag',cur_obj);
+    delete(to_delete)
+    return
+end
+
+% Get Model length (really this should always be 1)
+if isfield(data.kine.(cur_obj).config,'model_length')
+    m_length = data.kine.(cur_obj).config.model_length;
+else
+    anch_1 = data.kine.(cur_obj).config.anchor_array{1,2};
+    anch_2 = data.kine.(cur_obj).config.anchor_array{2,2};
+
+    m1 = data.kine.(cur_obj).config.model_coords(:,anch_1);
+    m2 = data.kine.(cur_obj).config.model_coords(:,anch_2);
+    dm = m2 - m1;
+
+    [m_theta,m_phi,m_length] = cart2sph(dm(1),dm(2),dm(3));
+end
+
+% Get length, azimuth, elevation for digitized anchor points
+% Correct direction for vector is HEAD - TAIL
+c1 = data.kine.(cur_obj).data.coords(1,:,frame);
+c2 = data.kine.(cur_obj).data.coords(2,:,frame);
+dc = c1 - c2;
+[psi,theta,c_length] = cart2sph(dc(1),dc(2),dc(3));
+
+% Scale factor is digitized units/model units
+s = c_length / m_length;    
+
+% Get correct angles to define LAB to BODY rotation
+alpha = alpha;%pi-alpha;%(2*pi)-alpha; %DEBUG NEW SYSTEM: for new will just be alpha
+theta = -theta; % reverse theta because cart2sph defines elevation above the xy-plane as positive, but this is a negative rotation around the y-axis
+psi = psi; % don't reverse because rotate from body to lab frame
+
+% Calculate quaternion, rotate, scale, translate
+q = eulzyx2quat(alpha,theta,psi); 
+m_fit = quatRot_bod2lab(q, model_3d);
+m_fit = scale3D(m_fit,s);
+
+pt_name = data.kine.(cur_obj).config.anchor_array{1,1}; % use first anchor point
+pt_col = data.kine.(cur_obj).config.anchor_array{1,2};
+kine_row = strmatch(pt_name, data.kine.(cur_obj).config.points);
+vb_anch = m_fit(:,pt_col);
+vf_anch = data.kine.(cur_obj).data.coords(kine_row,:,frame);
+
+[m_fit, v_trans] = trans3D(m_fit, vb_anch, vf_anch');
+
+data.kine.(cur_obj).data.eulzyx(:,frame) = [alpha;theta;psi];
+data.kine.(cur_obj).data.quat(:,frame) = q;
+data.kine.(cur_obj).data.v_trans(:,frame) = v_trans;
+data.kine.(cur_obj).data.model_coords(:,:,frame) = m_fit;
+guidata(controller,data)
+
+draw_model(cur_obj)
+
+draw_other = 0;
+if draw_other == 1
+    m_fit_eul = eulzyxRot_bod2lab(alpha, theta, psi, model_3d);
+    m_fit_eul = scale3D(m_fit_eul,s);
+    vb_anch_eul = m_fit_eul(:,pt_col);
+    m_fit_eul = trans3D(m_fit_eul, vb_anch_eul, vf_anch');
+
+    %DEBUG!! For now also plot euler angle rotation to check that it's the same
+    %as the quaternion one
+    x = m_fit_eul(1,:);
+    y = m_fit_eul(2,:);
+    z = m_fit_eul(3,:);
+
+    col_name = data.kine.(cur_obj).config.color;
+    col_rgb = 'y';%data.colors.(col_name);
+    for i = 1:data.setup.cam_num
+
+        [u(i).pts v(i).pts] = dlt_3D_to_2D( data.cal.coeff.(['DLT_',num2str(i)]), x, y, z );
+        cur_ax = dig_data.handles.(['cam',num2str(i)]);
+        cam_pt(i) = plot(cur_ax,u(i).pts(10:11), v(i).pts(10:11),'Color',col_rgb,'Visible',data.kine.(cur_obj).config.visible,'Tag', cur_obj);
+        other_pt(i) = plot(cur_ax,u(i).pts(14:15), v(i).pts(14:15),'Color',col_rgb,'Tag', cur_obj,'LineStyle',':');
+        other_pt(i) = plot(cur_ax,u(i).pts(10),v(i).pts(10),'Tag', cur_obj,'Marker','.','Color','m'); % LEFT wing hinge
+
+    end
+end

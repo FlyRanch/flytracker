@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab
+END
+flywing.mat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/flywing.mat
+END
+BODY_Struct.mat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/BODY_Struct.mat
+END
+flytrimod.asv
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/flytrimod.asv
+END
+flywing.fig
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/flywing.fig
+END
+flytrimod.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/flytrimod.m
+END
+wing.stl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/wing.stl
+END
+WING_Struct.mat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/WING_Struct.mat
+END
+flybody.mat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/flybody.mat
+END
+readSTLModel.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/readSTLModel.m
+END
+flybody.fig
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/flybody.fig
+END
+createTriModelplot.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/createTriModelplot.m
+END
+body.stl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/flylab/body.stl
+END

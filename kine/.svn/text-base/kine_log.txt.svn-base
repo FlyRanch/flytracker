@@ -1,0 +1,156 @@
+--------------------
+KINE PROGRAMMING LOG
+--------------------
+
+2004.06.29, 11:47, gwyneth 
+
+- altered version of Kine_v2_1 is in the folder 'New Kine from g 20040629'
+
+- alterations to Kine_v2_0:  renamed Kine_v2_1, so should call by this name at the matlab promt to run the program; reformatted the controller to include text, slider bars, and edit boxes for fine control of the selected point coordinates, no callback routines are currently implemented for these uicontrols; made object parameters 'type' and 'color' permanently invisible - eventually these should be deleted, but this will require changing other functions which look for them
+
+- alterations to default.mat in the 'setup' folder:  changed the default mfile_path to be the Kine_v2_1 folder, this will only affect running the program on gwyneth's computer.
+
+- debugging:  the advance function works fine on gwyneth's computer, so there must be something hard-wired making it break on qing's computer
+
+
+2004.06.29, 14:57, gwyneth
+
+- newest version of kine_v2_1 is in the folder 'NEW kine from g 20040630'
+
+- alterations to model\edit_ok_callback.m:  minor error where function looked for the field 'model' that didn't always exist fixed.
+
+- alterations to open_dig_fig.m:  changed figure and axes properties to elimiate flash during redraw.
+
+
+2004.07.01, 5:57, gwyneth
+
+- alterations to open_dig_fig and plot_it to add functionality to the coordinate plot:  when "go to frmae" radio button depressed then clicking on the plot goes to the corresponding frame, when "zoom" radio button depressed then can zoom in on the plot (and the images).  these radio buttons are the same as using the pointer menu to set the poniter function to "mark points" or "zoom", so let me know if they are redundant.  also clicking the reset plot button should automatically reset the plot axes to show all points plotted.
+
+
+2004.07.07, 5:59, Qing
+
+- alterations to Kine_v2_1.m: added callback names to xyz sliders; added min, max, sliderstep values
+
+- alterations to plot_it.m: added code to update xyz slider and edit box values
+
+- new files: created callbacks for sliders and edit boxes (x_slider_callback.m, x_edit_callback.m, etc.); code is very redundant, future refinement could reduce code to one callback file
+
+- alterations to keyboard_shortcuts_bird.m: took out increment inversion for keyboard shortcut for y-axis adjustment
+
+
+2004.07.07, 6:40, Qing
+
+- alterations to spline_data.m: changed spline code to spline all non-zero data (was splining only start and end frames before)
+
+
+2004.07.09, 6:40, Qing
+
+- alterations to Kine_v2_1.m: added menu option to export wing angles
+
+- new file: export_angles.m: function that exports wing angles of current data structure to ASCII file.  Currently no error handling if function is called before "data" variable is loaded.
+
+
+2004.07.09, 14:55, gwyneth
+
+- alterations to open_dig_fig.m:  added edit boxes and normalize toggle controls to coordinate plot (deleted radio buttons)
+
+- alterations to obj_ok_callback.m, toggle_pointer_fcn.m:  removed updates to deleted radio buttons
+
+- new files: set_plot_vals.m callback for edit boxes associated with coordinate plot
+
+- errors:  getting a "slider cannot exceed min/max value" error for some digitized points for the x and z sliders
+
+
+2004.07.13, 6:10, Qing
+
+- alterations to plot_it.m: added if statements to plot angles if Show Angles checkbox is checked; changed normalization code so that it normalizes to the frame range specified, and is also normalized so that the minima of the plots is always zero (was not the case before)
+
+- alterations to open_dig_fig.m: added Show Angles checkbox
+
+- alterations to reset_plot.m: commented out section with 'goto_radio' since the radio buttons were taken out
+
+- alterations to export_angles.m: changed so that it exports frame range given for the xyz plot
+
+
+2004.07.15, 17:46, Qing
+
+- alterations to keyboard_shortcuts_bird.m: changed shortcut keys to have a pair of keys to adjust each axis and to have frame movement keys
+
+
+2004.07.15, 19:22, Qing
+
+- alterations to spline_data.m: debugged splining of alpha
+
+
+2004.07.18, 11:55, Qing
+
+- alterations to keyboard_shortcuts_bird.m: added zoom/mark point toggle keys ('z' and 'm'); increased xyz slider range to be from 0 to 11 inches
+
+
+2004.07.19, 16:30, Qing
+
+- new files: calc_angles_stroke_plane.m, calcBodyStrokePlaneCentred.m, update_body_centered_angles.m, invRot3D.m, arbitraryRotate.m, len.m, angleAroundZeroDegrees.m -- function to calculate body centered coordinates and angles and supporting files
+
+- alterations to export_angles.m: changed to export a .mat file, changed to normalize real world angles
+
+- alterations to Kine_v2_1.m: added new menu item (Update Body centered Angles)
+
+
+2004.07.22, 17:59, Qing
+
+- alterations to draw_model.m: changed to draw alpha the same way as Kine v1.0
+
+2004.07.30, 01:55, gwyneth
+
+- reworking of drawing routine.  instead of erasing and redrawing everything, a handle structure has beed created in dig_data.objects for all points and objects drawn.  objects are then moved rather than deleted where applicable.  also, in some cases, only the object moved is redrawn.  mfiles altered include (but might not be limited to): draw_it, \model\obj_program, advance, clear_pt, load_data, mark_points_second_view, set_cur_pt_menu, x_slider_callback, y_slider_callback, z_slider_callback, \model\dig_setup
+
+- NOTE: due to the extensive changes, there are probably some new bugs introduced.  i tried to work through the most obvious, but haven't been able to try all the digitizing permutations yet.
+
+2004.07.30b, 01:55, gwyneth
+
+- alterations to obj_ok_callback, update_controller, draw_it to fix some of the new drawing errors, there are still lots of problems, though, so this version is a little unstable for plotting.
+
+- new file: initialize_xyzsliders and changes to update_controller to get slider range to deal with arbitrary view sizes; this should leave you with the same settings for step size and max, but need to double check.
+
+
+2004.08.20, 17:43, Qing
+
+- alterations to Kine_v2_1.m: added new menu item (Export Horizontal Angles)
+- new file: export_horizontal_angles.m
+- alterations to export_real_world_angles.m and export_body_centered_angles.m: updated comments
+- alterations to calc_angles_stroke_plane_centered.m: some settings tweaked, but still doesn't work right
+
+2004.08.20, 18:01, q & g
+
+- combined versions: updated versions of export_real_world_angles.m, export_body_centered_angles.m, and calc_angles_stroke_plane_centered.m in gwyneth's kine and added export_horizontal_angles.m
+- altered Kine_v2_1.m with new menu items (same as above)
+- NOTE: due to new image loading routine in gwyneth's version, this program does not yet work to read in old saved data.
+
+2004.08.20, 18:23, gwyneth
+
+- alterations: get_image_file_info.m, changed last few lines of code to get frame number correctly
+- alterations: load_data.m, copied some code from get_image_file_info.m to load_data.m to create field data.images.file_root if doesn't exist in previously saved data structures
+
+2005.04.08, 14:43, gwyneth (v13)
+
+- Changes to Kine_v2_1, get_image_file_info, load_data, and the default setup file to accomodate use of Kine with Matlab 7
+- when changing frames images should now load smoothly (no blinking)
+- should be able to load old data and have it query new location of mfiles and images (if these have changed)
+- the version does NOT include the cluge solution to Doug's path problem where all instances of dig_setup.objects were changed to dig_setup.objects(1) because for some reason that structure was becoming multidimensional
+
+2005.04.11, 17:36, gwyneth (v14)
+
+- Changes to load data: check to see if all the correct data.setup fields are there when loading old data because added some new ones in latest version of kine (i.e. data.setup.keyboard_commands_file).
+- added Doug's setup file (hummingbird.mat) to the setup folder, and added a line in Kine_v2_1 to use that setup file
+
+2005.04.11, 18:38, gwyneth (v17)
+
+- changes to load_data to improve backwards compatibility.  if saved data structures don't have appropriate setup fields, the user should be asked to provide the missing information (e.g. name of keyboard commands file) and these fields will be created.  this information is then saved into the data structure the first time the user saves their data again.
+- changes to Kine_v2_1 to allow the user to choose which setup file to use; the options are still hard-wired, so when a new setup file is created its name should be added to the list on line 30 of Kine_v2_1.m; then it will appear as an option in this dialog.
+- changes to the setups twocam.mat and hummingbird.mat to make their names correct
+
+2005.04.27, 17:56, gwyneth (v18)
+
+- changes to model/obj_program.m because this was originally hard-wired for 3-camera systems, made compatible with n-camera systems (looks to data.setup.cam_num to determine how many cameras there are)
+- also changed all general mfiles with copies in object folders so that instead of mfile_path = cd they would look to data.setup.mfile path directly; a few other mfiles were changed in the same way.
+- should now be able to use model objects with a 2-camera system

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model
+END
+param_button_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/param_button_callback.m
+END
+edit_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/edit_ok_callback.m
+END
+edit_object.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/edit_object.m
+END
+rot3D.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/rot3D.m
+END
+draw_model.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/draw_model.m
+END
+param_slider_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/param_slider_callback.m
+END
+obj_program.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/obj_program.m
+END
+param_edit_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/param_edit_callback.m
+END
+type_menu_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/type_menu_callback.m
+END
+dig_setup.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/dig_setup.m
+END
+model_params.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/segment_model/model_params.m
+END

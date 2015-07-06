@@ -1,0 +1,137 @@
+/* Subroutine to Render generative model based on camera calibration parameters
+	
+	Name: rendermod.c
+	Language: C
+ *
+ *Im = rendermod(model,K,M,imgres)
+ *
+ *Im - the rendered image
+ *
+ *K - intrinsic camera matrix
+ *   [-du 0  u0 0
+ *     0 -dv v0 0
+ *     0  0  1  0
+ *     0  0  0  1]
+ *
+ *M - [R -R*Tc
+ *     0   1]
+ *
+ *Tc - is the coordinates of the camera center
+ *
+	
+*/	
+
+#include	<stdio.h>
+#include    <stdlib.h>
+#include	<math.h>
+#include    "mex.h"
+#include    "matrix.h"
+#include    <windows.h> 
+#include    <gl\GL.h>
+#include    <gl\GLU.h>
+#include    <gl\glut.h>
+
+/* Input Arguments */
+
+#define	Mod_IN	prhs[0]
+#define	K_IN	prhs[1]
+#define	M_IN	prhs[2]
+#define	imgres_IN	prhs[3]
+
+
+/* Output Arguments */
+
+#define	Im_OUT	plhs[0]
+
+#if !defined(MAX)
+#define	MAX(A, B)	((A) > (B) ? (A) : (B))
+#endif
+
+#if !defined(MIN)
+#define	MIN(A, B)	((A) < (B) ? (A) : (B))
+#endif
+
+void init(void) 
+{
+   glClearColor (0.0, 0.0, 0.0, 0.0);
+   glShadeModel (GL_FLAT);
+}
+
+void display(void)
+{
+   glClear (GL_COLOR_BUFFER_BIT);
+   glColor3f (1.0, 1.0, 1.0);
+   glLoadIdentity ();             /* clear the matrix */
+           /* viewing transformation  */
+   gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+   glScalef (1.0, 2.0, 1.0);      /* modeling transformation */ 
+   glutWireCube (1.0);
+   glFlush ();
+}
+
+void reshape (int w, int h)
+{
+   glViewport (0, 0, (GLsizei) w, (GLsizei) h); 
+   glMatrixMode (GL_PROJECTION);
+   glLoadIdentity ();
+   glFrustum (-1.0, 1.0, -1.0, 1.0, 1.5, 20.0);
+   glMatrixMode (GL_MODELVIEW);
+}
+
+
+static void rendermod(int argc, char** argv)
+{
+    glutInit(&argc, argv);
+   glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
+   glutInitWindowSize (500, 500); 
+   glutInitWindowPosition (100, 100);
+   glutCreateWindow (argv[0]);
+   init ();
+   glutDisplayFunc(display); 
+   glutReshapeFunc(reshape);
+   glutMainLoop();
+   return;
+}
+
+/* c = 4; T = linspace(-.5,.5,20); npts = 6; x = [0 oknot(npts,c,1,0)] */
+
+/* mexFunction is the gateway routine for the MEX-file. */ 
+void mexFunction( int nlhs, mxArray *plhs[], 
+		  int nrhs, const mxArray *prhs[] )
+     
+{ 
+  double *Im; 
+  double *Mod,*K,*M,*imgres;
+  int fignum=1;
+  char *name;
+  
+  *name = 'box';
+  
+  /* Check for proper number of arguments */
+    
+  if (nrhs != 4) { 
+    mexErrMsgTxt("Four input arguments required."); 
+  } else if (nlhs > 1) {
+    mexErrMsgTxt("Too many output arguments."); 
+  } 
+  
+  
+  /* Assign pointers to the input parameters */ 
+  Mod = mxGetPr(Mod_IN); 
+  K = mxGetPr(K_IN);
+  M = mxGetPr(M_IN);
+  imgres = mxGetPr(imgres_IN);
+
+  /* Create a matrix for the return argument */ 
+  Im_OUT = mxCreateDoubleMatrix(imgres[0],imgres[1], mxREAL); 
+  
+   /* Assign pointers to the output parameters */ 
+  Im  = mxGetPr(Im_OUT);
+  
+  
+  
+  /* Do the actual computations in a subroutine */
+  rendermod(fignum,name); 
+  return;
+  
+}

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2
+END
+moveobj3.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/moveobj3.m
+END
+wing_double_bend.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/wing_double_bend.m
+END
+edit_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/edit_ok_callback.m
+END
+rot3D.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/rot3D.m
+END
+wing_bend.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/wing_bend.m
+END
+obj_program.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/obj_program.m
+END
+model_params.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/model_params.m
+END
+testrot.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/testrot.m
+END
+param_button_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/param_button_callback.m
+END
+testout.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/testout.m
+END
+testbend.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/testbend.m
+END
+edit_object.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/edit_object.m
+END
+draw_model.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/draw_model.m
+END
+wing_bend2.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/wing_bend2.m
+END
+param_slider_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/param_slider_callback.m
+END
+type_menu_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/type_menu_callback.m
+END
+param_edit_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/param_edit_callback.m
+END
+dig_setup.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/bent_wing_2/dig_setup.m
+END

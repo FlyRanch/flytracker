@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models
+END
+fly_frame_20061120.mat
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/fly_frame_20061120.mat
+END
+wing_fly_bent_allparam.mat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/wing_fly_bent_allparam.mat
+END
+fly_frame_20061120_rotated.mat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/fly_frame_20061120_rotated.mat
+END
+leg_fly.mat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/leg_fly.mat
+END
+wing_fly_TWO_BENDS.mat
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/wing_fly_TWO_BENDS.mat
+END
+wing_hoverfly.mat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/wing_hoverfly.mat
+END
+fly_frame.mat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/fly_frame.mat
+END
+wing.mat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/wing.mat
+END
+wing_fly_3D.mat
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/wing_fly_3D.mat
+END
+wing_fly_bent.mat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/wing_fly_bent.mat
+END
+wing_moth_coupled.mat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/wing_moth_coupled.mat
+END
+fly_frame_20061120_rotated_roll_CM.mat
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/fly_frame_20061120_rotated_roll_CM.mat
+END
+fly_frame_20061120_rotated_roll.mat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/fly_frame_20061120_rotated_roll.mat
+END
+wing_fly.mat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/models/wing_fly.mat
+END

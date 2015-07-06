@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs
+END
+rotateNeutral.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/rotateNeutral.m
+END
+normq.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/normq.m
+END
+calcBodyStrokePlaneCentred.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/calcBodyStrokePlaneCentred.m
+END
+plotquat_matrix.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/plotquat_matrix.m
+END
+angleAroundZeroDegrees.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/angleAroundZeroDegrees.m
+END
+rotquat.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/rotquat.m
+END
+get_arc_points.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/get_arc_points.m
+END
+multq.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/multq.m
+END
+quat2eul.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/quat2eul.m
+END
+q2Q.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/q2Q.m
+END
+invRot3D.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/invRot3D.m
+END
+plotquat.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/plotquat.m
+END
+conjq.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/conjq.m
+END
+eul_xyz2quat.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/eul_xyz2quat.m
+END
+arbitraryRotate.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/arbitraryRotate.m
+END
+quat2wprime.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/quat2wprime.m
+END
+dataAngles2quat.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/dataAngles2quat.m
+END
+quat2w.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/quat2w.m
+END
+rotquat_matrix.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_math/old_programs/rotquat_matrix.m
+END

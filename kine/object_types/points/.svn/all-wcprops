@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/points
+END
+edit_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/points/edit_ok_callback.m
+END
+edit_object.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/points/edit_object.m
+END
+obj_program.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/points/obj_program.m
+END
+type_menu_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/points/type_menu_callback.m
+END
+dig_setup.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/points/dig_setup.m
+END

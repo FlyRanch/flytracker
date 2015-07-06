@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame
+END
+roteulM.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/roteulM.m
+END
+edit_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/edit_ok_callback.m
+END
+rot3D.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/rot3D.m
+END
+match_menu_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/match_menu_callback.m
+END
+rotquat.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/rotquat.m
+END
+obj_program.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/obj_program.m
+END
+model_params.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/model_params.m
+END
+roteulMstar3.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/roteulMstar3.m
+END
+roteulMstar5.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/roteulMstar5.m
+END
+param_button_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/param_button_callback.m
+END
+OLDBITSOFOBJPROG.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/OLDBITSOFOBJPROG.m
+END
+quat2eul_Mstar.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/quat2eul_Mstar.m
+END
+roteulMstar8.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/roteulMstar8.m
+END
+draw_model.asv
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/draw_model.asv
+END
+edit_object.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/edit_object.m
+END
+draw_model.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/draw_model.m
+END
+param_slider_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/param_slider_callback.m
+END
+roteulMstar.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/roteulMstar.m
+END
+param_edit_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/param_edit_callback.m
+END
+rotquat2.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/rotquat2.m
+END
+type_menu_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/type_menu_callback.m
+END
+dig_setup.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/frame/dig_setup.m
+END

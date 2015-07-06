@@ -1,0 +1,188 @@
+/* Subroutine to apply rigid body transformation to surface points 
+ according to Translation, quaternion rotation, and scale 
+	
+	Name: xformq_surf.c
+	Language: C
+	
+*/	
+
+#include	<stdio.h>
+#include    <stdlib.h>
+#include	<math.h>
+#include    "mex.h"
+#include    "matrix.h"
+
+/* Input Arguments */
+
+#define	X_IN	prhs[0]
+#define	Y_IN	prhs[1]
+#define	Z_IN	prhs[2]
+#define	T_IN    prhs[3]
+#define	Q_IN    prhs[4]
+#define	S_IN    prhs[5]
+
+/* Output Arguments */
+
+#define	X_OUT	plhs[0]
+#define	Y_OUT	plhs[1]
+#define	Z_OUT	plhs[2]
+
+#if !defined(MAX)
+#define	MAX(A, B)	((A) > (B) ? (A) : (B))
+#endif
+
+#if !defined(MIN)
+#define	MIN(A, B)	((A) < (B) ? (A) : (B))
+#endif
+/* Prototype for the DGEMM routine */
+extern void dgemm_(char*, char*, int*, int*, int*, double*, double*, int*, 
+                  double*, int*, double*, double*, int*);
+
+extern void dgemv_(char*,int*, int*, double*, double*, int*, double*, int*,
+				   double*, double*, int*);
+
+static void xformq_surf(double xx[],
+		    double yy[],
+		    double zz[],
+            double x[],
+		    double y[],
+            double z[],
+		    double T[],
+		    double Q[],
+            double *S,
+            int nrow,
+            int ncol)
+
+{
+    int i, j, m, n, p, curridx;
+    double *tmp, *tmp1, *pt, one = 1.0, zero = 0.0;
+    
+    /* Define the quaternion matrices */
+    double Qplus[16] = {Q[3], -Q[2], Q[1], Q[0],
+        Q[2], Q[3], -Q[0], Q[1],
+        -Q[1], Q[0], Q[3], Q[2],
+        -Q[0], -Q[1], -Q[2], Q[3]}; 
+    
+    double Qminusconj[16] = {Q[3], -Q[2], Q[1], -Q[0],
+        Q[2], Q[3], -Q[0], -Q[1],
+        -Q[1], Q[0], Q[3], -Q[2],
+        Q[0], Q[1], Q[2], Q[3]};
+    
+    char *chn = "N";
+    char *cht = "T";
+    
+    
+  /* Don't forget that C index starts from 0! */
+    
+    tmp = mxCalloc(16,sizeof(double));
+    tmp1 = mxCalloc(4,sizeof(double));
+    pt = mxCalloc(4,sizeof(double));
+    
+    m = 4;
+    p = 4;
+    /* Multiply the matrices*/
+    /* First multiply the quaternion matrices together */
+    n = 4;
+            
+    dgemm_(cht,cht,&m, &n, &p, &one, Qplus, &m, Qminusconj, &p, &zero, tmp, &m);
+            
+    n = 1;
+    
+    for (j = 0; j < ncol; j++){
+        
+        for (i = 0; i < nrow; i++){
+            
+          /* define the current point */
+            curridx = i + j*nrow;
+            pt[0] = x[curridx];
+            pt[1] = y[curridx];
+            pt[2] = z[curridx];
+            pt[3] = 0.0;
+            
+          /* Then multiply the quaternion matrices by the point and scale it*/
+            dgemv_(chn,&m, &p, S, tmp, &m, pt, &n, &zero, tmp1,&n);
+         
+         /* Then store the points after adding the translation */
+            xx[curridx] = tmp1[0] + T[0];
+            yy[curridx] = tmp1[1] + T[1];
+            zz[curridx] = tmp1[2] + T[2];
+            
+        }/* Loop over columns */
+    }/* Loop over rows */
+    mxFree(tmp);
+    mxFree(tmp1); 
+    mxFree(pt); 
+
+ return;
+}
+
+/* c = 4; T = linspace(-.5,.5,20); npts = 6; x = [0 oknot(npts,c,1,0)] */
+
+/* mexFunction is the gateway routine for the MEX-file. */ 
+void mexFunction( int nlhs, mxArray *plhs[], 
+		  int nrhs, const mxArray *prhs[] )
+     
+{ 
+  double *xx,*yy,*zz; 
+  double *x,*y,*z,*T,*Q,*S;
+  int nrow,ncol; 
+  
+  
+  
+  /* Check for proper number of arguments */
+  if (nrhs < 4) { 
+    mexErrMsgTxt("At least 4 input arguments required."); 
+  } 
+  /* This Code doesn't work.  You must have 7 inputs */
+  else if (nrhs < 5){
+      T = mxGetPr(T_IN);
+      Q[0] = 0.0;
+      Q[1] = 0.0;
+      Q[2] = 0.0;
+      Q[3] = 1.0;
+      *S = 1.0;
+  }
+  else if (nrhs < 6){
+      T = mxGetPr(T_IN);
+      Q = mxGetPr(Q_IN);
+      *S = 1.0;
+  }
+  else if (nrhs < 7){
+      T = mxGetPr(T_IN);
+      Q = mxGetPr(Q_IN);
+      S = mxGetPr(S_IN);
+  }
+  else if (nlhs > 3) {
+    mexErrMsgTxt("Too many output arguments."); 
+  } 
+  
+  
+  /* Assign pointers to the input parameters */ 
+  x = mxGetPr(X_IN); 
+  y = mxGetPr(Y_IN);
+  z = mxGetPr(Z_IN);
+  
+  
+  nrow = mxGetM(X_IN);
+  ncol = mxGetN(X_IN);
+  
+  /* Create a matrix for the return argument */ 
+  X_OUT = mxCreateDoubleMatrix(nrow,ncol, mxREAL); 
+  Y_OUT = mxCreateDoubleMatrix(nrow,ncol, mxREAL); 
+  Z_OUT = mxCreateDoubleMatrix(nrow,ncol, mxREAL); 
+  
+   /* Assign pointers to the output parameters */ 
+  xx = mxGetPr(X_OUT);
+  yy = mxGetPr(Y_OUT);
+  zz = mxGetPr(Z_OUT);
+  
+  /*N = plhs[0];
+    D1= plhs[1];
+    D2= plhs[2];*/
+  
+  
+  /* Do the actual computations in a subroutine */
+  xformq_surf(xx,yy,zz,x,y,z,T,Q,S,nrow,ncol); 
+  return;
+  
+}

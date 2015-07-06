@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/arc
+END
+edit_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/arc/edit_ok_callback.m
+END
+edit_object.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/arc/edit_object.m
+END
+obj_program.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/arc/obj_program.m
+END
+type_menu_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/arc/type_menu_callback.m
+END
+dig_setup.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_types/arc/dig_setup.m
+END

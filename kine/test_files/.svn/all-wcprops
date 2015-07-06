@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/test_files
+END
+editdialogtest.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/test_files/editdialogtest.m
+END
+objcontroltest.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/test_files/objcontroltest.m
+END
+bcviewdialogtest.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/test_files/bcviewdialogtest.m
+END
+modelparamtest.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/test_files/modelparamtest.m
+END
+controllertest.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/test_files/controllertest.m
+END

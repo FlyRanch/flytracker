@@ -1,0 +1,677 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/FlyTracker/!svn/ver/7/trunk/FlyTracker/kine
+END
+export_real_world_angles.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/export_real_world_angles.m
+END
+object_dialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/object_dialog.m
+END
+fit_poly.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/fit_poly.m
+END
+im_pt_2_im_line.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/im_pt_2_im_line.m
+END
+save_auto.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/save_auto.m
+END
+obj_control_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/obj_control_callback.m
+END
+mark_points_first_view.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/mark_points_first_view.m
+END
+x_edit_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/x_edit_callback.m
+END
+type_list_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/type_list_callback.m
+END
+get_calibration_points_g.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/get_calibration_points_g.m
+END
+y_edit_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/y_edit_callback.m
+END
+draw_it.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/draw_it.m
+END
+z_edit_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/z_edit_callback.m
+END
+edit_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/edit_ok_callback.m
+END
+load_object_config.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/load_object_config.m
+END
+set_cur_pt_menu.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/set_cur_pt_menu.m
+END
+cur_pt_menu_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/cur_pt_menu_callback.m
+END
+get_calibration_points_m.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/get_calibration_points_m.m
+END
+load_images.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/load_images.m
+END
+toggle_pointer_fcn.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/toggle_pointer_fcn.m
+END
+convert_data_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/convert_data_file.m
+END
+plot_frame_chg.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/plot_frame_chg.m
+END
+vis_check_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/vis_check_callback.m
+END
+edit_object.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/edit_object.m
+END
+Kine_v2_1.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/Kine_v2_1.m
+END
+set_plot_vals.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/set_plot_vals.m
+END
+adv_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/adv_ok_callback.m
+END
+controller_closereq.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/controller_closereq.m
+END
+type_menu_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/type_menu_callback.m
+END
+order_button_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/order_button_callback.m
+END
+save_config.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/save_config.m
+END
+color_list_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/color_list_callback.m
+END
+y_slider_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/y_slider_callback.m
+END
+make_all_vis.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/make_all_vis.m
+END
+animate_coords.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/animate_coords.m
+END
+show_objects.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/show_objects.m
+END
+bc_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/bc_ok_callback.m
+END
+edit_object_dialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/edit_object_dialog.m
+END
+draw_bcview.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/draw_bcview.m
+END
+edit_fig_type_specific_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/edit_fig_type_specific_callback.m
+END
+set_bcpoint_menu.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/set_bcpoint_menu.m
+END
+reset_coord_sliders.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/reset_coord_sliders.m
+END
+spline_gui.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/spline_gui.m
+END
+unspline_gui.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/unspline_gui.m
+END
+advance.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/advance.m
+END
+show_bcviews.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/show_bcviews.m
+END
+axes_equal_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/axes_equal_callback.m
+END
+calc_angles_stroke_plane_centered.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/calc_angles_stroke_plane_centered.m
+END
+kine_log.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_log.txt
+END
+set_obj_param_menus.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/set_obj_param_menus.m
+END
+unspline_gui_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/unspline_gui_callback.m
+END
+add_object.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/add_object.m
+END
+update_controller.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/update_controller.m
+END
+unspline_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/unspline_data.m
+END
+calibrate.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/calibrate.m
+END
+calc_lengths.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/calc_lengths.m
+END
+load_calibration.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/load_calibration.m
+END
+save_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/save_data.m
+END
+delete_object.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/delete_object.m
+END
+reset_button_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/reset_button_callback.m
+END
+choose_advance_option.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/choose_advance_option.m
+END
+get_image_file_info.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/get_image_file_info.m
+END
+store.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/store.m
+END
+adv_checkbox_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/adv_checkbox_callback.m
+END
+calc_it.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/calc_it.m
+END
+cmap_jet_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/cmap_jet_callback.m
+END
+export_body_centered_angles.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/export_body_centered_angles.m
+END
+crosshair_hotspots.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/crosshair_hotspots.m
+END
+update_body_centered_angles.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/update_body_centered_angles.m
+END
+config_menu_CreateFcn.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/config_menu_CreateFcn.m
+END
+get_string.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/get_string.m
+END
+plot_text3.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/plot_text3.m
+END
+display_image.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/display_image.m
+END
+update_images.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/update_images.m
+END
+load_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/load_data.m
+END
+plot_lines.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/plot_lines.m
+END
+get_listbox_string.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/get_listbox_string.m
+END
+mark_points_second_view.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/mark_points_second_view.m
+END
+arc_button_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/arc_button_callback.m
+END
+cmap_gray_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/cmap_gray_callback.m
+END
+obj_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/obj_ok_callback.m
+END
+change_order.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/change_order.m
+END
+order_ok_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/order_ok_callback.m
+END
+reset_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/reset_plot.m
+END
+save_as.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/save_as.m
+END
+spline_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/spline_data.m
+END
+dig_fig_closereq.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/dig_fig_closereq.m
+END
+set_listbox_string.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/set_listbox_string.m
+END
+x_slider_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/x_slider_callback.m
+END
+get_calibration.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/get_calibration.m
+END
+z_slider_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/z_slider_callback.m
+END
+filter_gui.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/filter_gui.m
+END
+calculate_it.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/calculate_it.m
+END
+clear_pt.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/clear_pt.m
+END
+digfigtest.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/digfigtest.m
+END
+send_im_back.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/send_im_back.m
+END
+set_text.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/set_text.m
+END
+initialize_slider.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/initialize_slider.m
+END
+get_types.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/get_types.m
+END
+kine_pics.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/kine_pics.m
+END
+num_edit_callback_arc.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/num_edit_callback_arc.m
+END
+open_object_dialog.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/open_object_dialog.m
+END
+open_dig_fig.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/open_dig_fig.m
+END
+plot_it.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/plot_it.m
+END
+filter_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/filter_data.m
+END
+num_edit_callback.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/num_edit_callback.m
+END
+keyboard_commands_bird.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/keyboard_commands_bird.m
+END
+keyboard_commands.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/keyboard_commands.m
+END
+add_custom.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/add_custom.m
+END
+plot_text.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/plot_text.m
+END
+set_cur_obj_menu.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/set_cur_obj_menu.m
+END
+export_horizontal_angles.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/FlyTracker/!svn/ver/2/trunk/FlyTracker/kine/export_horizontal_angles.m
+END
